@@ -1,0 +1,17 @@
+public static void reversePI(){
+  Node curr=head;
+  Node prev=null;
+  
+  while(curr!=null)
+  {
+    Node next=curr.next;
+    curr.next=prev;
+    prev.next=curr;
+    curr=next;
+   }
+ //updating head and tail value
+ 
+ Node temp=head;
+ head=tail;
+ tail=temp;
+ }
